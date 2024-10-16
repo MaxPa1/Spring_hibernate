@@ -23,9 +23,6 @@ public class Car {
     @Column(name= "series")
     private String series;
 
-    @OneToOne(mappedBy = "userCar")
-    private User user;
-
     public Car() {}
 
     public Car(String model, String series) {
@@ -44,14 +41,6 @@ public class Car {
     public String getSeries() { return series; }
 
     public void setSeries(String series) { this.series = series; }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
 
     @Override
     public String toString() {
