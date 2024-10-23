@@ -27,11 +27,11 @@ public class MainApp {
          System.out.println("First Name = "+user.getFirstName());
          System.out.println("Last Name = "+user.getLastName());
          System.out.println("Email = "+user.getEmail());
-         System.out.println("Car = "+user.getCar());
+         System.out.println("Car = "+user.getCar().getModel());
          System.out.println();
       }
 
-      System.out.println(userService.userByCar(new Car("BMW", "X6")));
+      System.out.println(userService.userByCar(new Car("Nissan", "X-Trail")));
 
       context.close();
    }
